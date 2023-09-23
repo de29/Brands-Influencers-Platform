@@ -1,0 +1,40 @@
+html {
+	
+	font-family: Montserrat;
+	background-color: #222;
+
+  background-size:contain;
+
+}
+body{
+	overflow-x: hidden;
+	font-family: Montserrat;
+}
+.bodyDekhla {
+	background-image: url('../hppl.png')!important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+/* 	flex-wrap: wrap; */
+	height:100vh;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.line {
+/* 	flex-basis: 50%; */
+text-transform: uppercase;
+	font-size: 3em;
+	color: #99c;
+	text-shadow:3px  #fff;
+	letter-spacing: 10px;
+	position: absolute;
+	opacity: 0;
+}
+

@@ -1,0 +1,100 @@
+.cards {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  max-width: 34em;
+  margin: 10% auto 0;
+  min-height: 60em;
+}
+.carda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #ccc;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 0 40px #000;
+  transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+  transform-origin: 0 0;
+  transition: transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s, background 0.4s linear;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.carda :last-child {
+  margin-bottom: 0;
+}
+.carda--next {
+  z-index: 5;
+  transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+}
+.carda--out {
+  -webkit-animation: carda-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+          animation: carda-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  z-index: 1;
+  background: #bbb; 
+}
+@-webkit-keyframes carda-out {
+  0% {
+    z-index: 20;
+    transform: translateY(0px) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+  }
+  80% {
+    z-index: 1;
+  }
+  100% {
+    transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  }
+}
+@keyframes carda-out {
+  0% {
+    z-index: 20;
+    transform: translateY(0px) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+  }
+  80% {
+    z-index: 1;
+  }
+  100% {
+    transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  }
+}
+.carda--current {
+  cursor: auto;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  background: #EEE;
+  transform: rotate(-1deg) translateX(0%) scale(1);
+}
+.carda h1 {
+  margin: 10px;
+}
+html,
+body {
+  height: 100%;
+}
+.bodyCarta {
+  min-height: 60vh;
+  color: #2c2c2c;
+  background: #8555a463;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c2c2c, #8555a463);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c2c2c, #8555a463);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -80px;
+}

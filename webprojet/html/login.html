@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="../css/login.css">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Authentification </title> 
+</head>
+<body>
+    <nav>
+        <div class="menu">
+          <div class="logo">
+            <a href="home.html">ANDI</a>
+          </div>
+          <ul>
+            <li><a href="home.html">Acceuil</a></li>
+            <li><a href="register.html">S'inscrire</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+    <div class="forms">
+            <div class="form login">
+                <span class="title">S'identifier</span>
+
+                <form action="../php/login.php" method="post">
+                    <div class="input-field">
+                        <input type="text" name="Email" placeholder="Taper votre email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="Password" class="password" placeholder="Taper votre mot de passe" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+
+
+                    <div class="input-field button">
+                        <input type="submit" value="Se connecter">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Vous n'etes pas encore un membre?
+                        <a href="register.html" class="text signup-link">S'inscrire maintenant!</a>
+                    </span>
+                </div>
+            </div>
+
+            </body>
+
+</html>
+
+
+

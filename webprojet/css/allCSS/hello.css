@@ -1,0 +1,93 @@
+
+.Hello
+{
+
+min-height: 100vh;
+color: #2c2c2c;
+  background: #8555a463;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c2c2c, #8555a463);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c2c2c, #8555a463);
+background-size: cover;
+background-repeat: no-repeat;
+margin-top: -160px;
+}
+.containerHello
+{
+width: 40em;
+height: 30em;
+margin: 10em auto;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.video-bg {
+  /* Span the full grid */
+  grid-area: var(--fullFlex);
+
+  /* Re-size video to cover full screen while maintaining aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+
+  /* Display video below overlay */
+  z-index: -1;
+}
+
+.video-bg::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-overlay {
+  /* Span the full grid */
+  grid-area: var(--fullGrid);
+
+  /* Center Content */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.containerHello h1
+{
+font-family: arial;
+font-weight: bold;
+font-size: 80px;
+color: #fff;
+padding-top: 50px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.containerHello p 
+{
+font-family: arial;
+color: grey;
+padding-top: 25px;
+font-size: 20px;
+line-height: 25px;
+}
+.containerHello .btn 
+{
+width: 150px;
+height: 50px;
+border-radius: 50px;
+cursor: pointer;
+font-family: arial;
+color: #99c;
+background-color: transparent;
+font-size: 17px;
+font-weight: bold;
+border: 2px solid #99c;
+margin-top: 25px;
+transition: 0.5s;
+}
+.containerHello .btn:hover
+{
+color: #fff;
+border: 2px solid #99c;
+background: #99c;
+}

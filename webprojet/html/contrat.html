@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/contrat.css">
+    </head>
+    <body>
+      <nav>
+        <div class="menu">
+          <div class="logo">
+            <a href="#">ANDI</a>
+          </div>
+          <ul>
+            <li><a href="bienvenueinf.html">Acceuil</a></li>
+            <li><a href="../php/pageinfluenceur.php">voir marques</a></li>
+            <li><a href="../php/messageinf.php">messagerie</a></li>
+            <li><a href="../php/profile.php">mon profil</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="row">
+    <div class="col-md-12">
+      <form action="../php/contratphp2.php" method="post">
+        <h1> Contract </h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> Influenceur</legend>
+        
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="Name">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="Email">
+       
+          <label for="adress">Adresse</label>
+          <input type="text" id="adress" name="ville">
+          
+        
+         
+        </fieldset>
+        <fieldset>  
+        
+          <legend><span class="number">2</span> Marque</legend>
+          
+         <label for="bio">Nom :</label>
+          <input type="text"  id="bio" name="Namemrq">
+
+          <label for="EmailM">Email :</label>
+          <input type="text"  id="EmailM" name="Emailmrq">
+          <label for="adress">Adresse :</label>
+          <input type="text" id="adress" name="villemrq">
+         </fieldset>
+
+         <fieldset>  
+        
+          <legend><span class="number">3</span> Informations du contrat</legend>
+          
+         <label for="bio">Date de Debut :</label>
+         <input type="date" id="bio" name="date_debut">
+
+          <label for="EmailM">Date de fin :</label>
+          <input type="date"  id="EmailM" name="date_fin">
+
+          <label for="adress">Montant Totale (en $):</label>
+          <input type="number"  id="adress" name="montant">
+
+          <label for="pay">Méthode de paiement :</label>
+          <select id="pay" name="methodpm">
+              <option value="Paypal" name="methodpm">Paypal</option>
+              <option value="Liquide" name="methodpm">Liquide</option>
+              <option value="Chèque" name="methodpm">Chèque</option>
+              <option value="Carte de crédit" name="methodpm">Carte de crédit</option>
+              
+          </select>
+          
+         </fieldset>
+
+         <fieldset>
+          
+          <legend><span class="number">4</span> Terms et conditions</legend>
+        
+          <p> <b>I. INTRODUCTION- </b> Ce contrat à été fait le          . Ce contrat lie            (Influenceur) et            (marque). <br>
+           <b>II. ACCORD - </b> La marque et l'influenceur reconnaissent les termes de ce contrat et s'y conformeront. <br>
+           <b>III. TERMES-</b>  Le contrat commence le            et se termine le           . Un nouveau contrat sera créé pour le renouvellement du mandat. <br>
+           <b>IV. PAIEMENT -</b>  Le montant total du paiement s'élève à $          . Le paiement sera fait par           . Le paiement doit être effectué au début ou pendant la campagne. L'influenceur sera responsable du paiement des taxes appropriées. <br>
+           <b> V. EXIGENCE RELATIVE AU CONTENU </b><br>
+           <b>A.</b>  L'influenceur s'engage à créer du contenu original qui décent, honnête et factuel. <br>
+          <b>B.</b>  Une approbation de la marque est            avant de publier le contenu. <br>
+           <b>C.</b>  Le contenu créé approuvé sera partagé par l'influenceur sur ses comptes de médias sociaux énumérés ci-dessus. <br>
+           <b>D.</b>  Lamarque peut demander à l'influenceur d'ajouter des balises, des liens ou des titres dans la description du média téléversé. <br>
+           <b>E.</b>  Le contenu doit être conforme aux termes et conditions de la plate-forme de réseau social utilisée. <br>
+           <b>F.</b>  Le contenu ne doit contenir aucun langage vulgaire et doit être adapté à tout le monde. <br>
+           <b>VI.</b>  COPYRIGHT - La marque détiendra les droits d'auteur des médias téléversés. Cependant, les deux parties sont autorisées à le partager avec leurs propres chaînes respectives. <br>
+           <b>VII.</b>  CONFIDENTIALITÉ - Ce contrat est strictement confidentiel et seules les personnes autorisées sont autorisées à le consulter. <br>
+           <b> VIII.</b> MODIFICATIONS - Ce contrat ne peut être changé ou modifié qu'avec le consentement écrit des deux parties (marque et Influenceur). <br>
+           <b>IX.</b>  LOI APPLICABLE - Le présent contrat est régi par les lois de             . <br></p>
+        
+         
+        </fieldset>
+       
+        <button type="submit" name="confirmer">Confimer</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
